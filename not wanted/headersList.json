@@ -1,0 +1,18 @@
+[
+    {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", 
+      "Accept-Encoding": "gzip, deflate, br", 
+      "Accept-Language": "en-US,en;q=0.9,hi;q=0.8", 
+      "Cache-Control": "max-age=0", 
+      "Host": "httpbin.org", 
+      "Sec-Ch-Ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"", 
+      "Sec-Ch-Ua-Mobile": "?0", 
+      "Sec-Ch-Ua-Platform": "\"macOS\"", 
+      "Sec-Fetch-Dest": "document", 
+      "Sec-Fetch-Mode": "navigate", 
+      "Sec-Fetch-Site": "cross-site", 
+      "Sec-Fetch-User": "?1", 
+      "Upgrade-Insecure-Requests": "1",  
+      "X-Amzn-Trace-Id": "Root=1-6408e5a1-08a7fc7334e8a05e3a5c7c12"
+    }
+]
