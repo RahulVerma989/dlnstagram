@@ -1,0 +1,484 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styles */
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+line-height: 1.5;
+color: #333333;
+margin: 0;
+padding: 0;
+}
+
+.main-section{
+    padding:30px;
+}
+
+/* Header Styles */
+h1 {
+font-size: 36px;
+font-weight: bold;
+/* margin-top: 20px; */
+margin-bottom: 20px;
+}
+
+/* Paragraph Styles */
+p {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+/* List Styles */
+ul {
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 20px;
+}
+
+/* Link Styles */
+a {
+color: #337ab7;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+/* Heading Styles */
+h2 {
+font-size: 24px;
+font-weight: bold;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+/* Log File Styles */
+code {
+background-color: #f5f5f5;
+border-radius: 3px;
+font-size: 14px;
+padding: 2px 4px;
+}
+
+/* Advertising Partner Styles */
+li p {
+margin: 0;
+margin-bottom: 5px;
+}
+
+/* Privacy Policy Contact Styles */
+#contact-us {
+margin-top: 30px;
+padding-top: 20px;
+border-top: 1px solid #cccccc;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+h1 {
+font-size: 28px;
+/* margin-top: 10px; */
+margin-bottom: 10px;
+}
+
+h2 {
+font-size: 20px;
+margin-top: 15px;
+margin-bottom: 5px;
+}
+
+p {
+font-size: 14px;
+line-height: 1.3;
+margin-top: 8px;
+margin-bottom: 8px;
+}
+}
+        
+@media (max-width: 576px) {
+    h1 {
+    font-size: 24px;
+    }
+    
+    h2 {
+    font-size: 18px;
+    }
+    
+    p {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    }
+}
+
+.heading{
+    display:block;
+    position:relative;
+    color: white;
+    background-color:darkslateblue;
+    font-weight:600;
+    padding: 20px;
+    text-align:center;
+}
+.heading a{
+    text-decoration: none;
+    color:white;
+}
+.links_pages{
+    display:inline-block;
+    position:relative;
+    max-width:600px;
+    width:-webkit-fill-available;
+    padding:20px;
+    text-align:left;
+    font-weight:500;
+    list-style-position:inside;
+    list-style-type:decimal;
+}
+.links_pages li{
+    position:relative;
+    padding:10px;
+    cursor:pointer;
+}
+.links_pages li:hover{
+    color:black;
+    background-color:gainsboro;
+}
+.links_pages li .fa-brands{
+    font-size:20px;
+    padding:0px 10px;
+}
+footer{
+    display: block;
+    position: relative;
+    bottom: 0px;
+    margin: auto;
+    width: -webkit-fill-available;
+    padding: 30px;
+    background-color: aliceblue;
+}
+footer nav{
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    min-height: 100px;
+    height: auto;
+    margin: auto 10px;
+}
+footer nav ul{
+    list-style-type: none;
+
+}
+footer nav ul li:first-child{
+    display:block;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    padding:5px 0px;
+}
+footer nav ul li{
+    padding:5px 0px;
+}
+footer p{
+    display: block;
+    position:relative;
+    text-align:center;
+    padding:10px;
+}
+.hero{
+    display:block;
+    position:relative;
+    text-align:center;
+    padding:30px 0px;
+    margin:20px auto;
+}
+.hero p{
+    padding:5px 0px;
+}
+#instagram-form{
+    display:block;
+    position:relative;
+    margin:0px auto;
+    padding:5px;
+    text-align: center;
+}
+#instagram-form input{
+    display:inline-block;
+    position:relative;
+    padding:10px;
+    max-width:600px;
+    width:100%;
+}
+#instagram-form button{
+    display:inline-block;
+    position:relative;
+    padding:10px 20px;
+    color:white;
+    background-color:darkslateblue;
+    cursor: pointer;
+    border-radius: 3px;
+    outline:none;
+}
+main{
+    display:block;
+    position:relative;
+    width:100%;
+    min-height:80vh;
+}
+main #data{
+    display:block;
+    position:relative;
+    margin: auto;
+    text-align:center;
+    padding:20px;
+}
+#data #message{
+    display: block;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+#data #video{
+    display:block;
+    position:relative;
+    text-align: center;
+}
+#data #video .section{
+    display: flex;
+    position: relative;
+    margin: 5px auto;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+#data #videoProfileImage{
+    display: inline-block;
+    position:relative;
+    border-radius:50%;
+    width:35px;
+}
+#data #videoAccountName,
+#data #videoUserName{
+    display: inline-block;
+    position: relative;
+    margin:auto 5px;
+}
+#data .videoPreviewImage{
+    display:block;
+    position:relative;
+    max-height:60vh;
+}
+#data #videoDownloadLink,
+#data .mediaDownloadLink{
+    display:block;
+    position:relative;
+    padding:15px 0px;
+    width:300px;
+    background-color:darkslateblue;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+    text-decoration: none;
+}
+#data #videoCaption{
+    display: block;
+    position: relative;
+    font-size: 15px;
+    padding: 10px 30px;
+    text-align: justify;
+}
+
+.url-feature{
+    display: block;
+    position:relative;
+    max-width:300px;
+    margin:10px auto;
+}
+
+.features {
+    background-color: #f5f5f5;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.feature-content {
+    width: 50%;
+    padding: 0 50px;
+}
+
+.feature-img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* .left-img {
+    /* margin-right: 50px; */
+/* } */
+
+/* .right-img { */
+    /* margin-left: 50px; */
+/* }  */
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.feature-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: darkslateblue;
+}
+
+.feature-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.seo-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: darkslateblue;
+}
+
+.seo-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.disclaimer {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .feature-content {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.faq-section{
+    padding:30px;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .faq-card {
+    width: 45%;
+    margin-bottom: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  
+  .faq-question {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .faq-answer {
+    display: none;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Add animation to faq-answer */
+  .faq-answer.show {
+    display: block;
+    animation: fade-in 0.5s ease-in-out;
+  }
+  
+  /* Define primary color */
+  :root {
+    --primary-color: #0088cc;
+  }
+  
+  /* Change color of faq-question on hover */
+  .faq-question:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Add arrow icon to faq-question */
+  .faq-question::after {
+    content: "\25BC";
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Rotate arrow icon on click */
+  .faq-question.active::after {
+    transform: rotate(180deg);
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .faq-card {
+      width: 100%;
+    }
+  }
+  
+  /* Keyframe animation for faq-answer */
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+   

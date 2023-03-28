@@ -1,0 +1,136 @@
+<html>
+    <%- include('partials/head') %>
+<body>
+  <%- include('partials/header')%>
+
+<style>
+    .download-box img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .download-items__thumb {
+        margin-bottom: 1rem;
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+    }
+    .video-icon {
+        position: absolute;
+        z-index: 10;
+        top: 8px;
+        left: 8px;
+    }
+</style>
+<section class="section main-section">
+    <div class="container">
+    <div class="columns">
+    <div class="column is-12">
+    <div><h1 class="mt-0 mb-4">Terms of Service - <%= config.brandName %>™</h1>
+    <p>Please read these terms of service (<b>Terms of Service</b> or <b>ToS</b>) carefully before accessing our application and website.<br>
+    Our ToS may change from time to time to be in line with the developments to our application and website to give our valued users the highest satisfaction. Please check regularly the update time on top of the ToS to ensure you have read the updated version with changes.</p>
+    <h3 class="mt-0 mb-4">Acceptance of Terms of Service</h3>
+    <p>By accessing and using our application and website, you signify your acceptance of our policy and ToS, including the updated versions. If you do not agree with any content, please do not use our application and website.</p>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Who may use our Services (User)</h3>
+    <p>Our ToS governs the relationship between <%= config.brandName %> application (<b><%= config.brandName %> App</b>) and <%= config.brandName %> website (<b><%= config.brandName %> Web</b>) including <%= config.domainName %> (collectively, <b><%= config.brandName %> App and Web</b>) and users of <%= config.brandName %> App and Web (<b>User</b>) being who access the <%= config.brandName %> App and Web and/or use the products and services provided through the <%= config.brandName %> App and Web (<b><%= config.brandName %> Products and Services</b>). </p>
+    <p>Our ToS is a mutual agreement between you, either an individual or an entity (<b>You</b> or <b>User</b>) or a group of individuals or entities (<b>You</b> or <b>Users</b>) and the developer of <%= config.brandName %> Products and Services (<b><%= config.brandName %></b>) regarding the use of <%= config.brandName %> Products and Services. </p>
+    <p>By accessing or using <%= config.brandName %> Products and Services, you confirm that you have carefully read, understood and accepted our ToS, and you agree to abide by the ToS as a User (Users).</p>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Materials relate to our Services</h3>
+    <p><%= config.brandName %> creates and develops content, information, graphics, documents, text, products, and all other elements and products and services offered through <%= config.brandName %> App and Web (<b>Content</b> or <b>Materials</b>) available for your use for free and personal use subject to the terms and conditions set out in this document.</p>
+    <p>By accessing and using <%= config.brandName %> App and Web you agree to be bound by and to accept our ToS and all terms and conditions contained and/or referenced herein, and you agree to abide by the ToS as a User (Users) of our Content and Materials.</p>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Users' Obligations</h3>
+    <p>You agree to use <%= config.brandName %> App and Web, <%= config.brandName %> Products and Services only for purposes permitted by our ToS as well as any applicable law, regulation or generally accepted practices or guidelines in the relevant jurisdictions. </p>
+    <p>Our tools was designed to help you download videos and images uploaded by your own account. We reserve the right to refuse to provide our service if you use our tools to infringe upon others people privacy and material.</p>
+    <p><%= config.brandName %> IS NOT RESPONSIBLE FOR ANY VIOLATION OF APPLICABLE LAWS, RULES, OR REGULATIONS COMMITTED BY YOU OR A THIRD PARTY AT YOUR BEHEST. </p>
+    <p>Specifically, you agree and warrant that in using <%= config.brandName %> App and Web, <%= config.brandName %> Products and Services, your actions do not contravene the laws, rules, or regulations of (1) the country, state, or locality where you reside, or (2) the country, state, or locality where <%= config.brandName %> is located or operates.</p>
+     </div>
+    <div>
+    <h3 class="mt-0 mb-4">Trademark Issue</h3>
+    <p><%= config.brandName %> respects trademark rights and complies with trademark laws and regulations. Our trademark <%= config.brandName %>™ is created by <%= config.brandName %> and should be used only for and in relation to our Services, <%= config.brandName %> App and Web. It should be read as a seamless word without reference to any individual or entity other than <%= config.brandName %>. When using, mentioning, referring to our Services, <%= config.brandName %> App and Web, <%= config.brandName %> Content and Materials, please note to follow our policy:</p>
+    <ul>
+    <li>Use the exact format <%= config.brandName %>™ as a word without any space, division, separation among its constituent components or in any other variants.</li>
+    <li>Never associate our trademark <%= config.brandName %>™ with and never confuse our <%= config.brandName %> TM with any other individual(s), entity(ies), application(s), website(s), goods or services of other individual and entities if not belong to <%= config.brandName %>.</li>
+    <li>We reserve our rights in and relating to our trademark <%= config.brandName %>™ against any misuse, misrepresentation, infringement in any form.</li>
+    <li>We encourage and thank you who inform us of any suspect misuse, misrepresentation, infringement, and non-compliance for our proper handling.</li>
+    </ul>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Copyright Issue</h3>
+    <p><%= config.brandName %> respects copyrights and complies with copyright laws and regulations.</p>
+    <ul>
+    <li>Users are responsible for the content you use with (the link you paste on) <%= config.brandName %> App and Web.</li>
+    <li><%= config.brandName %> provides support to Users to download information/content Users paste on <%= config.brandName %> App and Web for the legitimate interests of the Users.</li>
+    <li>We only display "as is" content that users have posted on websites, pages or networks of service or social network providers. Users are responsible for ensuring they have the legal right in accordance with relevant laws and ensure their own intellectual property rights in relation to the content as posted.</li>
+    <li>Users only use video downloaded through the <%= config.brandName %> App and Web, for personal, non-commercial, free purposes.</li>
+    <li><%= config.brandName %> cannot and has no obligation to check whether each content/information is legal or not, but if it detects any violation, it will ban Users from accessing and using <%= config.brandName %> App and Web and <%= config.brandName %> Products and Services.</li>
+    <li><%= config.brandName %> does not backup/archive Users’ content for any reason.</li>
+    <li>We encourage and thank you who inform us of any suspect misuse, misrepresentation, unauthorized use, infringement and non-compliance for our proper handling.</li>
+    </ul>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Use License</h3>
+    <p>We grant our Users permission to temporarily download one copy of the Content and Materials (as defined above) on <%= config.brandName %> App and Web for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+    <ul>
+    <li>Alter, modify, distribute or duplicate the Materials;</li>
+    <li>Use the Content and Materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
+    <li>Remove any copyright or other proprietary notations from the Content and Materials; or</li>
+    <li>Transfer the Content and Materials to another person or "mirror" the Content and Materials on any other server.</li>
+    </ul>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Privacy</h3>
+    <p>We run <%= config.brandName %> App and Web in compliance with our set principles to ensure that the confidentiality of personal information including information of our Users is protected and maintained without disclosing to any third parties for any reasons.</p>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Disclaimer</h3>
+    <p>The Content and Materials on <%= config.brandName %> App and Web are provided "as is". <%= config.brandName %> makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, <%= config.brandName %> does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the Content and Materials on its website or otherwise relating to such Content and Materials or on any sites linked to the site.</p>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Accuracy of Content and Materials</h3>
+    <p>The Content and Materials appearing on <%= config.brandName %> App and Web could include technical, typographical, or photographic errors. <%= config.brandName %> does not warrant that any of the Content and Materials are accurate, complete, or current. <%= config.brandName %> may make changes to the Content and Materials contained on its website at any time without notice.</p>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Links</h3>
+    <p><%= config.brandName %> has no responsibility for any of the sites linked to its website, together with the contents thereof. The inclusion of any link does not imply endorsement by <%= config.brandName %> of the site. Use of any such linked website is at the Users' own risk.</p>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Site Terms of Use Modifications</h3>
+    <p>These Terms of Service may be amended by <%= config.brandName %> at any time upon notice provided by any of the following means: through a posting on the main page of the Website, when or after you login into your User Account (as defined below), or by e-mail to the address you provided when you set up your User Account. We always add information on the updated version of the Terms of Service on top of the terms. Therefore, you are responsible for reading the updated terms every time you access/use our Website/Service and ensure you are fully aware of the terms/updates before using our Website/Service. Your failure to provide or maintain accurate or current contact information in your User Account will not obviate your responsibility to comply with these Terms of Service as amended from time to time. Using contact details or identifications of others are not allowed and considered fraud. We will deactivate your account at any time we identify your fraud.</p>
+    </div>
+    <h2>Privacy Policy – <%= config.brandName %></h2>
+    <div>
+    <h3 class="mt-0 mb-4">Personal identification information</h3>
+    <p>Users may visit <%= config.brandName %> App and Web anonymously. We never record identification information of our Users and will only collect personal identification information from Users if they voluntarily submit such information to us. Users can always refuse to supply personal identification information. However, if they agree to supply they are responsible for providing exact and correct identification information of themselves. <%= config.brandName %> is not responsible for any fake or incorrect information provided by the Users. If we discover such incidents we would ban Users from accessing and using <%= config.brandName %> App and Web and our Services.</p>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Advertising</h3>
+    <p>We accept advertisements (Ads) on <%= config.brandName %> App and Web to maintain and support our own research and development on <%= config.brandName %> App and Web for non-commercial purposes. Ads appearing on <%= config.brandName %> App and Web may be delivered to Users by advertising partners who may set cookies. They will only compile non-personal identification information about you or others who use your computer and do not track personal information about you, such as your name, email address, and physical address. You may dismiss the use of the cookies or cease access to our application and website at any time as Users of <%= config.brandName %> are not required to accept the Ads. </p>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Changes to this privacy policy</h3>
+    <p><%= config.brandName %> has the discretion to update this privacy policy at any time. When we do, we will post a notification on the main page of <%= config.brandName %> App and Web, revise the updated date on the top of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.</p>
+    </div>
+    <div>
+    <h3 class="mt-0 mb-4">Your acceptance of these terms</h3>
+    <p>By accessing and using <%= config.brandName %> App and Web, you express your voluntary acceptance of this policy. If not, please do not use our Services. Your continued use of the Services following the posting of changes to this policy will be deemed your acceptance of those changes.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+<%- include('partials/footer') %>
+
+</body>
+</html>
