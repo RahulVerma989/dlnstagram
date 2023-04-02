@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('partials/header') %>
+  <%- include('partials/head') %>
+  <head>
+    <%- include('partials/metadata-tags-reels') %> 
+  </head>
 <body>
+  <%- include('partials/header') %>
   <div id="data">
     <p id="message"><%= status %></p>
 
@@ -48,6 +52,8 @@
     <% } %>
 
   </div>
+
+  <%- include('partials/footer') %>
 <script>
 
 if ("<%= postType %>" !== 'MultiplePost') { 

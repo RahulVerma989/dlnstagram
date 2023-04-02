@@ -61,6 +61,7 @@ app.get('/stylesheets/:fileName', (req, res) => {
 
 // handle requests to /reel/:mediaId and /p/:mediaId
 app.get('/reels/:mediaId', handleMediaRequest);
+app.get('/reel/:mediaId', handleMediaRequest);
 app.get('/p/:mediaId', handleMediaRequest);
 
 // handle requests to /reel/:mediaId and /p/:mediaId
@@ -95,7 +96,7 @@ function getPlatform(url) {
   const pathname = urlObj.pathname;
 
   if (hostname === 'www.instagram.com' || hostname === 'instagram.com') {
-    if (pathname.startsWith('/reels/') || pathname.startsWith('/p/')) {
+    if (pathname.startsWith('/reel/') || pathname.startsWith('/reels/') || pathname.startsWith('/p/')) {
       return 'instagram';
     }
   } else if (hostname === 'www.tiktok.com' || hostname === 'tiktok.com') {
@@ -120,10 +121,10 @@ function parseUrl(url) {
   const mediaUrl = url;
 
   // Extract mediaId from URL
-  const match = url.match(/\/(reels|p)\/([\w\-]+)/);
+  const match = url.match(/\/(reel|reels|p)\/([\w\-]+)/);
   if (match) {
     mediaId = match[2];
-    if (match[1] === "reels") {
+    if (match[1] === "reels" || match[1] === "reel") {
       type = "videos";
     } else {
       type = "images";
@@ -136,6 +137,7 @@ function parseUrl(url) {
 // Add route for handling form submit
 app.post('/api/instagram', upload.none(), (req, res) => {
   const mediaUrl = req.body.url;
+  console.log(mediaUrl);
   // Validate the URL
   if (!mediaUrl) {
     return res.status(400).json({ error: 'URL is required' });
@@ -146,7 +148,8 @@ app.post('/api/instagram', upload.none(), (req, res) => {
 
   // validate the input
   if (!data.platform || !data.mediaId) {
-    console.log("Invalid url")
+    console.log("Invalid url");
+    console.log(data);
     return res.status(400).json({ message: 'Invalid URL' });
   }
   // call cdnrail API to get media URL

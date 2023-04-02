@@ -5,7 +5,7 @@ const cdnrailApi = {
   // This function takes in an object with 'mediaUrl', and returns a Promise
   // that resolves to the URL of the media file on cdnrail.com.
   getMediaUrl: (mediaUrl) => {
-    const cdnrailUrl = `http://${config.cdnrail}/api/v1/media?url=${mediaUrl}`;
+    const cdnrailUrl = `https://${config.cdnrail}/api/v1/media?url=${mediaUrl}`;
     console.log("Making request to cdnrail using url: " + cdnrailUrl);
     return axios.get(cdnrailUrl)
       .then(response => {
